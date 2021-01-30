@@ -9,9 +9,25 @@ using Utils;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Pawn : MonoBehaviour
 {
+    private float slowSpeed = 1.0f;
+    public float slowDistance = 10.0f;
+    private float fastSpeed = 2.0f;
+    public float fastDistance = 20.0f;
+
+    private void OnDrawGizmosSelected(){
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, slowDistance);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, fastDistance);
+    }
+
     private Rigidbody2D _rigidbody;
     private Vector2 _target;
     private float _angleTarget;
+    public float AngleTarget
+    {
+        get => _angleTarget;
+    }
     
     public float rotateSpeedModifier = 1;
     public float speedModifier = 1;
@@ -34,7 +50,8 @@ public class Pawn : MonoBehaviour
 
     public void SetTarget(Vector2 target)
     {
-        _speedModifierByDistance = Math.Max(1,target.Distance(Position) * additiveSpeedPerDistance);
+        // _speedModifierByDistance = Math.Max(1,target.Distance(Position) * additiveSpeedPerDistance);
+        _speedModifierByDistance = target.SqrDistance(Position)>fastDistance*fastDistance?fastSpeed:(target.SqrDistance(Position)>slowDistance*slowDistance?slowSpeed:0);
         _target = target;
         RotateToward(target);
     }
