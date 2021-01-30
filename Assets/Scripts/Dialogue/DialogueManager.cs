@@ -11,13 +11,11 @@ public class DialogueManager : MonoBehaviour
     private void Awake(){
         if (instance == null){
             instance = this;
-            DontDestroyOnLoad(this.gameObject);    
         } else {
             Destroy(this);
         }
     }
 
-    private bool hidden = true;
     private Queue<string> sentences;
     private void Start() {
         sentences = new Queue<string>();
@@ -53,7 +51,6 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
-        hidden = true;
         GetComponent<RectTransform>().DOAnchorPosY(370, 0.5f);
     }
 }
