@@ -29,12 +29,19 @@ public class Pawn : MonoBehaviour
         RotateToward(target);
     }
 
+    /// <summary>
+    /// Face smoothly the pawn toward the target
+    /// </summary>
+    /// <param name="target"></param>
     public void RotateToward(Vector2 target)
     {
         Vector2 dir = (target - _rigidbody.position).normalized;
         _angleTarget = Vector2.SignedAngle(Vector2.up, dir);
     }
 
+    /// <summary>
+    /// Stop the pawn
+    /// </summary>
     public void Stop()
     {
         _target = _rigidbody.position;
@@ -53,9 +60,9 @@ public class Pawn : MonoBehaviour
 
     private void Update()
     {
-        if(!_target.IsNearlyEqual(_rigidbody.position))
+        if(!_target.IsNearlyEqual(_rigidbody.position)) // Don't move the pawn if we are on the target
             MoveToward(_target);
-        if(!Mathf.Approximately(_rigidbody.rotation, _angleTarget))
+        if(!Mathf.Approximately(_rigidbody.rotation, _angleTarget)) // Don't try to change the angle if it's already the good one
             RotateToward(_angleTarget);
     }
 

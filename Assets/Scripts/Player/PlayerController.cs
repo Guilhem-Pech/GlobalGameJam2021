@@ -12,7 +12,10 @@ public class PlayerController : MonoBehaviour
     public InputReader inputReader;
     public Pawn pawn;
     public float deadZoneRadius = 10f;
-    private Camera _current;
+    private Camera _currentCamera;
+    private bool _isRightClickPressed = false;
+    private Vector2 _target;
+    
     
     private void OnValidate()
     {
@@ -20,35 +23,42 @@ public class PlayerController : MonoBehaviour
             pawn = GetComponent<Pawn>();
     }
 
-    void Start()
+    private void Start()
     {
         inputReader.onRightClick.AddListener(SetTarget);
-        _current = Camera.main;
+        _currentCamera = Camera.main;
+        _target = pawn.Position;
     }
-
-    void SetTarget(InputAction.CallbackContext context)
-    {
-        if (!context.performed) return;
-        
-        Vector2 target = ScreenToWorld(inputReader.GetMousePosition());
-        if (target.SqrDistance(pawn.Position) < deadZoneRadius * deadZoneRadius)
-        {
-            pawn.Stop();
-            pawn.RotateToward(target);
-        }
-        else
-            pawn.SetTarget(target);
-    }
-
     private Vector2 ScreenToWorld(Vector3 mousePos)
     {
-        mousePos.z = -_current.transform.position.z;
-        return _current.ScreenToWorldPoint(mousePos);
+        mousePos.z = -_currentCamera.transform.position.z;
+        return _currentCamera.ScreenToWorldPoint(mousePos);
+    }
+    private void SetTarget(InputAction.CallbackContext context)
+    {
+        if (context.canceled)
+            _isRightClickPressed = false;
+        if (!context.performed) return;
+        _isRightClickPressed = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (_isRightClickPressed)
+        {
+            _target = ScreenToWorld(inputReader.GetMousePosition()); // Get the world pos of where we clicked
+            if (_target.SqrDistance(pawn.Position) < deadZoneRadius * deadZoneRadius) // If we are in the deadzone, don't move, just rotate
+            {
+                pawn.Stop();
+                pawn.RotateToward(_target);
+                _target = Vector2.zero; // Transform to local position
+            }
+            else
+            {
+                _target -= pawn.Position; // Transform to local position;
+            }
+        }
+        if(!_target.IsNearlyEqual(Vector2.zero)) // Don't change the target if nearly equal to 0
+            pawn.SetTarget(pawn.Position + _target); // The target in the pawn is in worldpos
     }
 }
