@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Ship;
 using UnityEngine;
 using Utils;
+
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Pawn : MonoBehaviour
@@ -33,6 +35,11 @@ public class Pawn : MonoBehaviour
     private float _speedModifierByDistance = 1f;
     
     public Vector2 Position => _rigidbody.position;
+
+    public EquipmentSlot leftSlot;
+    public EquipmentSlot rightSlot;
+    public EquipmentSlot frontSlot;
+    public EquipmentSlot backSlot;
     
     private void Start()
     {
