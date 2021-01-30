@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DG.Tweening;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    private bool hidden = true;
     private Queue<string> sentences;
     private void Start() {
         sentences = new Queue<string>();
@@ -34,6 +36,7 @@ public class DialogueManager : MonoBehaviour
         }
         nameText.text = dialogue.name;
         DisplayNextSentence();
+        GetComponent<RectTransform>().DOAnchorPosY(-10, 0.5f);
     }
 
     public void DisplayNextSentence()
@@ -50,6 +53,7 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
-        Destroy(this.gameObject);
+        hidden = true;
+        GetComponent<RectTransform>().DOAnchorPosY(370, 0.5f);
     }
 }
