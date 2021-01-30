@@ -27,9 +27,7 @@ namespace Ship
         {
             DeleteEquipment();
             equipmentType = type; 
-            if (!equipmentType.mesh) return;
-            GameObject g =Instantiate(equipmentType.mesh, transform);
-            g.transform.localPosition += equipmentType.offset;
+            GameObject g = Instantiate(equipmentType.gameObject, transform);
         }
 
         public void DoAction()
