@@ -8,5 +8,11 @@ namespace Utils
         {
             return (b - a).sqrMagnitude < epsilon * epsilon;
         }
+
+        public static float SqrDistance(this Vector2 a, Vector2 b)
+        {
+            return (b - a).SqrMagnitude();
+        }
+        
     }
 }
