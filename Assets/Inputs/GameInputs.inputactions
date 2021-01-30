@@ -6,6 +6,14 @@
             "id": "a47eea07-e99d-4591-91c2-3814d1c51f34",
             "actions": [
                 {
+                    "name": "FireGrapplingHook",
+                    "type": "Button",
+                    "id": "e536a44a-e2d6-4d84-a8d4-f0b5c5c1ad17",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
                     "name": "RightClick",
                     "type": "Button",
                     "id": "eb8eab7f-9c2c-43b9-8910-41afc4a08f2d",
@@ -18,6 +26,14 @@
                     "type": "Value",
                     "id": "4366f088-7649-4b3c-819f-2372264c1fba",
                     "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LeftClick",
+                    "type": "Button",
+                    "id": "c00bb64e-9b43-4a8c-b445-5ca745dcd8e7",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 }
@@ -42,6 +58,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "MousePosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "622d27f8-8b5d-435b-9084-957cfaa90ce0",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "931808a2-fc78-4b82-8d33-582ccaaf3fd9",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FireGrapplingHook",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
