@@ -1,3 +1,5 @@
+using System;
+using Equipment;
 using Player;
 using Ship;
 using UnityEngine;
@@ -7,11 +9,12 @@ using Utils;
 public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
-    public InputReader inputReader;
-    public Pawn pawn;
+    [SerializeField] private InputReader inputReader;
+    [SerializeField] private Pawn pawn;
     private Camera _currentCamera;
     private bool _isRightClickPressed = false;
-
+    
+    
     public DirectionCursor directionCursor;
     private Vector2 _target;
 
@@ -44,8 +47,11 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 ScreenToWorld(Vector3 mousePos)
     {
-        mousePos.z = -_currentCamera.transform.position.z;
-        return _currentCamera.ScreenToWorldPoint(mousePos);
+        Ray ray = _currentCamera.ScreenPointToRay(mousePos);
+        Plane xy = new Plane(Vector3.forward, new Vector3(0, 0, 0));
+        float distance;
+        xy.Raycast(ray, out distance);
+        return ray.GetPoint(distance);
     }
 
     private void SetTarget(InputAction.CallbackContext context)

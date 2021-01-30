@@ -12,6 +12,7 @@ namespace Player
         private Vector2 _mousePos;
         public UnityEvent<InputAction.CallbackContext> onRightClick = new UnityEvent<InputAction.CallbackContext>(); 
         public UnityEvent<InputAction.CallbackContext> onLeftClick = new UnityEvent<InputAction.CallbackContext>(); 
+        public UnityEvent<InputAction.CallbackContext> onGrapplingFired = new UnityEvent<InputAction.CallbackContext>(); 
         
         private void OnEnable()
         {
@@ -44,6 +45,11 @@ namespace Player
         public void OnLeftClick(InputAction.CallbackContext context)
         {
             onLeftClick.Invoke(context);
+        }
+
+        public void OnFireGrapplingHook(InputAction.CallbackContext context)
+        {
+            onGrapplingFired.Invoke(context);
         }
     }
 }
