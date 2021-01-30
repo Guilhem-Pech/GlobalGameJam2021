@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Player;
+using Ship;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Utils;
@@ -16,7 +17,7 @@ public class PlayerController : MonoBehaviour
     private bool _isRightClickPressed = false;
     private Vector2 _target;
     
-    
+
     private void OnValidate()
     {
         if (pawn == null)
@@ -26,9 +27,24 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         inputReader.onRightClick.AddListener(SetTarget);
+        inputReader.onLeftClick.AddListener(FireEquipment);
+        
         _currentCamera = Camera.main;
         _target = Vector2.zero;
     }
+
+    private void FireEquipment(InputAction.CallbackContext context)
+    {   
+        // TODO Check if the equipment we're trying to use is our (lol)
+        if (!context.performed) return;
+        Vector2 mousePos = ScreenToWorld(inputReader.GetMousePosition());
+        Collider2D overlap = Physics2D.OverlapBox(mousePos, Vector2.one, 0, 1 << 6);
+        if (overlap && overlap.transform.parent.TryGetComponent(out EquipmentSlot equipment))
+        {
+            equipment.DoAction();
+        }
+    }
+
     private Vector2 ScreenToWorld(Vector3 mousePos)
     {
         mousePos.z = -_currentCamera.transform.position.z;
