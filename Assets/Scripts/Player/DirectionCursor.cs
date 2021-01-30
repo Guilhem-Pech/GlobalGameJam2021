@@ -30,8 +30,12 @@ public class DirectionCursor : MonoBehaviour
         transform.eulerAngles = new Vector3(0, 0, angle);
     }
 
-    private void Update() {
-        float angle = (float)Math.Atan2(transform.position.y - playerController.transform.position.y, transform.position.x - playerController.transform.position.x);
-        Debug.Log(angle * 180 / Math.PI);
+    /* unused code
+    private void Update()
+    {
+        Vector3 playerPos = playerController.transform.position;
+        Vector3 cursorPos = transform.position;
+        float angle = (float)Math.Atan2(cursorPos.y - playerPos.y, cursorPos.x - playerPos.x);
     }
+    */
 }
