@@ -13,7 +13,9 @@ public class Pawn : MonoBehaviour
     
     public float rotateSpeedModifier = 1;
     public float speedModifier = 1;
-
+    public float additiveSpeedPerDistance = 0.05f;
+    private float _speedModifierByDistance = 1f;
+    
     public Vector2 Position => _rigidbody.position;
     
     private void Start()
@@ -25,6 +27,7 @@ public class Pawn : MonoBehaviour
 
     public void SetTarget(Vector2 target)
     {
+        _speedModifierByDistance = Math.Max(1,target.Distance(Position) * additiveSpeedPerDistance);
         _target = target;
         RotateToward(target);
     }
@@ -49,16 +52,16 @@ public class Pawn : MonoBehaviour
     
     private void MoveToward(Vector2 point)
     {
-        Vector2 newPosition = Vector2.MoveTowards(transform.position, point, 0.1f * speedModifier);
+        Vector2 newPosition = Vector2.MoveTowards(transform.position, point, 0.1f * speedModifier * _speedModifierByDistance);
         _rigidbody.MovePosition(newPosition);
     }
     
     private void RotateToward(float target)
     {
-        _rigidbody.SetRotation(Mathf.LerpAngle(_rigidbody.rotation, target, Time.deltaTime * rotateSpeedModifier));
+        _rigidbody.SetRotation(Mathf.LerpAngle(_rigidbody.rotation, target, Time.fixedDeltaTime * rotateSpeedModifier));
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if(!_target.IsNearlyEqual(_rigidbody.position)) // Don't move the pawn if we are on the target
             MoveToward(_target);
