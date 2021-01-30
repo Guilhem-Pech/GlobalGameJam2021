@@ -10,7 +10,7 @@ namespace Ship
         private void Start()
         {
             if(equipmentType)
-                SpawnEquipment();
+                SpawnEquipment(equipmentType);
         }
 
 
@@ -23,9 +23,10 @@ namespace Ship
             if(deleteType) equipmentType = null;
         }
         
-        public void SpawnEquipment()
+        public void SpawnEquipment(Equipment type)
         {
-            DeleteEquipment(false);
+            DeleteEquipment();
+            equipmentType = type; 
             if (!equipmentType.mesh) return;
             GameObject g =Instantiate(equipmentType.mesh, transform);
             g.transform.localPosition += equipmentType.offset;
