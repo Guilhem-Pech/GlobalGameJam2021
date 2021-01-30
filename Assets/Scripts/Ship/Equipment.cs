@@ -2,12 +2,16 @@
 
 namespace Ship
 {
-    public class Equipment : MonoBehaviour
+    public abstract class Equipment : MonoBehaviour
     {
-        public void DoAction()
+
+        public abstract int Value
         {
-            Debug.Log("FIRE IN THE HOLE");
+            get;
+            protected set;
         }
+
+        public abstract void DoAction();
         
     }
 }

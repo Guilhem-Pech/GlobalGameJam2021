@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 1619724611784063579}
   - component: {fileID: 1769457411971417864}
   - component: {fileID: 8566058858756603459}
+  - component: {fileID: 68401218485999534}
   m_Layer: 0
-  m_Name: CanonBall
+  m_Name: _BaseCanonBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,7 +94,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -204,5 +205,21 @@ TrailRenderer:
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.1
-  m_Autodestruct: 1
+  m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &68401218485999534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619724611784063577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aad51238eac66945927811b988c16de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  direction: {x: 0, y: 0, z: 0}
+  speed: 0
+  range: 10

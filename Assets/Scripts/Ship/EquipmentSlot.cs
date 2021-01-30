@@ -27,7 +27,7 @@ namespace Ship
         {
             DeleteEquipment();
             equipmentType = type; 
-            GameObject g = Instantiate(equipmentType.gameObject, transform);
+            equipmentType = Instantiate(equipmentType.gameObject, transform).GetComponent<Equipment>();
         }
 
         public void DoAction()

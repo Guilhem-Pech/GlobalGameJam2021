@@ -36,7 +36,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1089546659404686675, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Player Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1089546659404686676, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
       propertyPath: m_RootOrder
@@ -84,7 +84,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1089546659404686677, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
       propertyPath: fastDistance
-      value: 13
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1089546659404686677, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
       propertyPath: slowDistance
