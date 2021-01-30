@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     {
         inputReader.onRightClick.AddListener(SetTarget);
         _currentCamera = Camera.main;
-        _target = pawn.Position;
+        _target = Vector2.zero;
     }
     private Vector2 ScreenToWorld(Vector3 mousePos)
     {
