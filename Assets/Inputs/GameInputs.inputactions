@@ -6,7 +6,7 @@
             "id": "a47eea07-e99d-4591-91c2-3814d1c51f34",
             "actions": [
                 {
-                    "name": "LeftClick",
+                    "name": "RightClick",
                     "type": "Button",
                     "id": "eb8eab7f-9c2c-43b9-8910-41afc4a08f2d",
                     "expectedControlType": "Button",
@@ -30,7 +30,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LeftClick",
+                    "action": "RightClick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

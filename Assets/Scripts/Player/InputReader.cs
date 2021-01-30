@@ -10,7 +10,7 @@ namespace Player
     {
         private GameInputs _gameInputs;
         private Vector2 _mousePos;
-        public UnityEvent<InputAction.CallbackContext> onLeftClick = new UnityEvent<InputAction.CallbackContext>(); 
+        public UnityEvent<InputAction.CallbackContext> onRightClick = new UnityEvent<InputAction.CallbackContext>(); 
         
         private void OnEnable()
         {
@@ -30,9 +30,9 @@ namespace Player
             return _mousePos;
         }
         
-        public void OnLeftClick(InputAction.CallbackContext context)
+        public void OnRightClick(InputAction.CallbackContext context)
         {
-            onLeftClick.Invoke(context);
+            onRightClick.Invoke(context);
         }
 
         public void OnMousePosition(InputAction.CallbackContext context)

@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        inputReader.onLeftClick.AddListener(SetTarget);
+        inputReader.onRightClick.AddListener(SetTarget);
         _current = Camera.main;
     }
 
