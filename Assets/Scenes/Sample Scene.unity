@@ -1785,10 +1785,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1488635159719452528, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7258083721583073806, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1800,14 +1796,6 @@ PrefabInstance:
     - target: {fileID: 7435390894937036448, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7435390894937036454, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
-      propertyPath: fastDistance
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 7435390894937036454, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
-      propertyPath: slowDistance
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7435390894937036455, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
       propertyPath: m_RootOrder
