@@ -16,7 +16,16 @@ public class GameManager : MonoBehaviour
     }
 
     [SerializeField] private UIZoom islandUI;
+    [SerializeField] private UIBase scoreUI;
     [SerializeField] private Cinemachine.CinemachineVirtualCamera islandCamera;
+
+    public void UpdateScore()
+    {
+        PlayerController player = PlayerController.Instance;
+        Ship.InventorySystem inventory = player.GetComponent<Ship.InventorySystem>();
+        scoreUI.RefreshGoldScore(inventory.gold);
+        scoreUI.RefreshLegendScore(inventory.legend);
+    }
 
     public void EnterIslandMode()
     {
