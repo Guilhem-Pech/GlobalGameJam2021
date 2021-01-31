@@ -1,5 +1,4 @@
     using Player;
-    using ScriptableObjects;
     using Ship;
 using UnityEngine;
 using UnityEngine.InputSystem;

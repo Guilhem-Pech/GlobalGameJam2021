@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using DG.Tweening;
-using ScriptableObjects;
 
 namespace Ship
 {
