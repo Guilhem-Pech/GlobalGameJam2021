@@ -1,5 +1,6 @@
     using Player;
-using Ship;
+    using ScriptableObjects;
+    using Ship;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Utils;
@@ -22,7 +23,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Pawn pawn;
     private Camera _currentCamera;
     private bool _isRightClickPressed = false;
-    
+    public FModEvent shipBell;
     
     public DirectionCursor directionCursor;
     private Vector2 _target;
@@ -69,6 +70,7 @@ public class PlayerController : MonoBehaviour
             _isRightClickPressed = false;
         if (!context.performed) return;
         _isRightClickPressed = true;
+        shipBell.PlayOneShotAttached(gameObject);
     }
 
     private void Update()

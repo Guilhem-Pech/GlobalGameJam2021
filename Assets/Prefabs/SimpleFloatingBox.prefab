@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 556086488826805213}
   - component: {fileID: 556086488826805209}
   m_Layer: 0
-  m_Name: Cube_8
+  m_Name: SimpleFloatingBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,3 +122,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goldInside: 15
+  eventPickup:
+    eventReference: event:/UI/DropSound

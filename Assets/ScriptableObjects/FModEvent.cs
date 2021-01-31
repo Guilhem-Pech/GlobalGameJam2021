@@ -45,13 +45,19 @@ namespace ScriptableObjects
 
         public RESULT Play()
         {
+            if (eventReference == null) return RESULT.ERR_INVALID_STRING;
             if(!eventInstance.isValid()) CreateInstance();
             return eventInstance.start();
         }
 
-        public void PlayOneShot()
+        public void PlayOneShot(Vector2 position = default(Vector2))
         {
-            FMODUnity.RuntimeManager.PlayOneShot(eventReference);
+            FMODUnity.RuntimeManager.PlayOneShot(eventReference, position );
+        }
+        
+        public void PlayOneShotAttached(GameObject go)
+        {
+            FMODUnity.RuntimeManager.PlayOneShotAttached(eventReference, go);
         }
         
         

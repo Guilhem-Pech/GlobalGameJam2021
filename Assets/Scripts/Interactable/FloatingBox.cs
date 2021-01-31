@@ -1,4 +1,5 @@
 ﻿using System;
+using ScriptableObjects;
 using UnityEngine;
 
 namespace Interactable
@@ -10,6 +11,8 @@ namespace Interactable
         [SerializeField] private int goldInside;
         public int GoldValue => goldInside;
 
+        public FModEvent eventPickup;
+        
         private void OnEnable()
         {
             _trigger = GetComponent<BoxCollider2D>();
@@ -20,6 +23,7 @@ namespace Interactable
         {
             if (!other.TryGetComponent(out Pawn pawn)) return; //If it's not a ship, do nothing
             pawn.GoldPossessed += goldInside;
+            eventPickup.PlayOneShot();
             Destroy(gameObject);
         }
     }
