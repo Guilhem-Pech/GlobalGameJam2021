@@ -846,7 +846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 514ebe57abe1f1647a8afbc25e0dff47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  islandUI: {fileID: 515968461}
+  islandUI: {fileID: 1866711880}
   scoreUI: {fileID: 515968462}
   islandCamera: {fileID: 265129867}
 --- !u!1001 &515968460
@@ -858,11 +858,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 698008963923586654, guid: fb9d9ad34747fe64181e1c65868fb0ea, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 883027630729182064, guid: fb9d9ad34747fe64181e1c65868fb0ea, type: 3}
+      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 883027630729182064, guid: fb9d9ad34747fe64181e1c65868fb0ea, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351670391436098419, guid: fb9d9ad34747fe64181e1c65868fb0ea, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -545
       objectReference: {fileID: 0}
     - target: {fileID: 3095552636725013364, guid: fb9d9ad34747fe64181e1c65868fb0ea, type: 3}
       propertyPath: m_Pivot.x
@@ -988,19 +996,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9200300302112278262, guid: fb9d9ad34747fe64181e1c65868fb0ea, type: 3}
+      propertyPath: inputReader
+      value: 
+      objectReference: {fileID: 11400000, guid: 39b0cddf4804ae94e93cf37d1f099162, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb9d9ad34747fe64181e1c65868fb0ea, type: 3}
---- !u!114 &515968461 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2662403907380370737, guid: fb9d9ad34747fe64181e1c65868fb0ea, type: 3}
-  m_PrefabInstance: {fileID: 515968460}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b17560a8809c2840b69c2578281c84d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &515968462 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7160395793214680869, guid: fb9d9ad34747fe64181e1c65868fb0ea, type: 3}
@@ -3060,6 +3061,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1866711880 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7565335211225451586, guid: fb9d9ad34747fe64181e1c65868fb0ea, type: 3}
+  m_PrefabInstance: {fileID: 515968460}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b17560a8809c2840b69c2578281c84d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1891838664
 GameObject:
   m_ObjectHideFlags: 0
@@ -3530,6 +3542,10 @@ PrefabInstance:
     - target: {fileID: 7258083721583073806, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296889954898484694, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
+      propertyPath: cheat
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7435390893812253643, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
       propertyPath: m_Mesh

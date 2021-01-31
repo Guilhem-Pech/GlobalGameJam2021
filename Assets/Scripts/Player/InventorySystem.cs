@@ -18,6 +18,11 @@ namespace Ship
 
         private void Start() {
             GameManager.Instance.UpdateScore();
+            equipments = new List<Equipment>(10);
+            if(!cheat) return;
+            equipments.Add(new Canon());
+            equipments.Add(new Canon());
+            equipments.Add(new Pike());
         }
 
         public List<Equipment> equipments;
@@ -25,6 +30,8 @@ namespace Ship
         public int gold { get => _gold; }
         private int _legend;
         public int legend { get => _legend; }
+
+        [SerializeField] private bool cheat;
 
         public void AddGold(int score)
         {

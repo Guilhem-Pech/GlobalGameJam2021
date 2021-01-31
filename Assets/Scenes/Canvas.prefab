@@ -411,21 +411,6 @@ MonoBehaviour:
     - "This sample dialogue is only used for testing purposes, you\u2019ll need to
       remove it before building of cours !"
     - Enjoy the game !
---- !u!114 &2662403907380370737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4239497467292212274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b17560a8809c2840b69c2578281c84d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Boat: {fileID: 8220767521307064777}
-  Island: {fileID: 6191961877510096054}
-  Inventory: {fileID: 698008963923586654}
 --- !u!1001 &735194192570602346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -495,6 +480,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3095552636725013364}
     m_Modifications:
+    - target: {fileID: 1569435128813015494, guid: 2a84d390bd67f37448ebc915693ca3fd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1569435128813015494, guid: 2a84d390bd67f37448ebc915693ca3fd, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -787,38 +776,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4474804468282468538, guid: 6dcb1b09d288e9742822acce742197f8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8564159882696265025, guid: 6dcb1b09d288e9742822acce742197f8, type: 3}
       propertyPath: m_Name
       value: UIZoom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dcb1b09d288e9742822acce742197f8, type: 3}
---- !u!1 &4239497467292212274 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8564159882696265025, guid: 6dcb1b09d288e9742822acce742197f8, type: 3}
-  m_PrefabInstance: {fileID: 5480804286493217139}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5596345732070780696 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 118655717892161131, guid: 6dcb1b09d288e9742822acce742197f8, type: 3}
-  m_PrefabInstance: {fileID: 5480804286493217139}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8220767521307064777 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4474804468282468538, guid: 6dcb1b09d288e9742822acce742197f8, type: 3}
-  m_PrefabInstance: {fileID: 5480804286493217139}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6191961877510096054 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1865052030274229701, guid: 6dcb1b09d288e9742822acce742197f8, type: 3}
-  m_PrefabInstance: {fileID: 5480804286493217139}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &698008963923586654 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5017125440514031405, guid: 6dcb1b09d288e9742822acce742197f8, type: 3}
   m_PrefabInstance: {fileID: 5480804286493217139}
   m_PrefabAsset: {fileID: 0}

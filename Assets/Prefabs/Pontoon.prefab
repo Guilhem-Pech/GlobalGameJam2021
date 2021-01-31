@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7105240511500605788}
   - component: {fileID: 6187114399253177622}
   - component: {fileID: 5011133799426540023}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Deck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3726881246105691024}
   - component: {fileID: 5297073465739433949}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pontoon
   m_TagString: Pontoon
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 399292012923301151}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TargetTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 4003975933488441077}
   - component: {fileID: 6238940990865550994}
   - component: {fileID: 3413069086491496016}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Leg_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 1591674353396971813}
   - component: {fileID: 2126032022920223814}
   - component: {fileID: 8353676658810547616}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4274063954806015686}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}

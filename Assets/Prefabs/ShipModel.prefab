@@ -72,7 +72,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 91e20213872621a4b93c58682cd4523d, type: 3}
       propertyPath: m_Name
-      value: BATO+anim
+      value: ShipModel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: 91e20213872621a4b93c58682cd4523d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91e20213872621a4b93c58682cd4523d, type: 3}

@@ -19,7 +19,6 @@ namespace Ship
         private void OnTriggerEnter2D(Collider2D other) {
             Fighter fighter = other.GetComponent<Fighter>();
             if (fighter == null) return;
-            Debug.Log("Collision with Fighter");
             fighter.Damage(damage);
             Destroy(this.gameObject);
         }
@@ -36,7 +35,6 @@ namespace Ship
         }
 
         private void FallOutOfRange() {
-            Debug.Log("Splash !");
             Destroy(this.gameObject);  
         }
     }

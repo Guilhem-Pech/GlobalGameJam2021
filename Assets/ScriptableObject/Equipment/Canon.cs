@@ -9,8 +9,14 @@ namespace Ship
         [SerializeField] private int value = 0;
         public override int Value { get => value; protected set => this.value = value; }
         [SerializeField] private String _name;
-        public String Name { get => _name; }
-        
+        public override String Name { get => _name; set => _name = value; }
+
+        private static string spritePath = "Sprites/Canon";
+        public override Sprite Sprite
+        {
+            get => Resources.Load<Sprite>(spritePath);
+        }
+
         [SerializeField] private GameObject canonBallPrefab;
         [SerializeField] private GameObject[] spawnPoints;
         [SerializeField] private float velocity;
@@ -53,6 +59,17 @@ namespace Ship
             {
                 Gizmos.DrawLine(spawnPoint.transform.position, spawnPoint.transform.position + spawnPoint.transform.up);
             }
+        }
+
+        public override string DataToString()
+        {
+            String data = "";
+            data += $"Damage Per Canon Ball: {Damage.ToString()}";
+            data += $"Range: {Range.ToString()}";
+            data += $"Velocity: {Velocity.ToString()}";
+            data += $"Canon Ball Size: {BallScale.ToString()}";
+            data += $"Rate of Fire: {FireRate.ToString()}";
+            return data;
         }
     }
 }

@@ -12,8 +12,7 @@ namespace Player
         private void OnValidate()   
         {
             if (player == null) player = FindObjectOfType<PlayerController>();
-            if (player == null) player = GameObject.Find("Player").GetComponent<PlayerController>();
-
+            if (player == null) player = GameObject.Find("Player")?.GetComponent<PlayerController>();
         }
 
         private void Start()
