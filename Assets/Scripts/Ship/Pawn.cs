@@ -59,6 +59,7 @@ public class Pawn : MonoBehaviour
         _speedModifierByDistance = target.SqrDistance(Position)>fastDistance*fastDistance?fastSpeed:(target.SqrDistance(Position)>slowDistance*slowDistance?slowSpeed:0);
         _target = target;
         RotateToward(target);
+        movementEvent.AttatchToGameobject(this.gameObject);
         movementEvent?.PlayIfNotAlreadyPlaying();
     }
 

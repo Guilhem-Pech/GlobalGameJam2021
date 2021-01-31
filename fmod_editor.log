@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000018862BCCE48 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000024FEE3F5D18 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -15,3 +15,200 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 5280864
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 18624
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000FCAC0FF268
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC44887B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC44887AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC44887BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC44887CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000024FE6B24178
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='32304__acclivity__shipsbell', format=5, channels=2, frequency=48000, lengthbytes=66912, lengthpcm=272800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.879608.
+[LOG] SoundI::release                          :  (0000025248F0B778)
+[LOG] SoundI::release                          :     32304__acclivity__shipsbell (0000024FE14A79E8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 5280864
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 18624
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000FCAC0FF268
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC44887B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC44887AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC44887BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC44887CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000024FE0EF8148
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='32304__acclivity__shipsbell', format=5, channels=2, frequency=48000, lengthbytes=66912, lengthpcm=272800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.879608.
+[LOG] SoundI::release                          :  (0000025248F09F08)
+[LOG] SoundI::release                          :     32304__acclivity__shipsbell (0000024FE14A5E48)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSound                     : filename = FMODAsset/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x8000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] SystemI::createSound                     : setdata soundi = 0000024FEE8CA418 : node = 00000252495F4CF0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000024FE62390E8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024FEE8CA418
+[LOG] SystemI::createSoundInternal             :     Create name='FMODAsset/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5280864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 18624
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000252495F4E00
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bateau-loop', format=5, channels=2, frequency=48000, lengthbytes=471680, lengthpcm=1720161, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.980103.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFC, Stack Size: 49152, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024FEE8CA418
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024FEE8CDD78
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024FEE8CDD78
+[LOG] SystemI::createSound                     : filename = FMODAsset/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024FEE8CB6A8 : node = 00000252495F1C30
+[LOG] SystemI::createSound                     : add node to async list : head = 0000024FE62390E8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024FEE8CB6A8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODAsset/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5280864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 18624
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000252495F1D40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bateau-loop', format=5, channels=2, frequency=48000, lengthbytes=471680, lengthpcm=1720161, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.980103.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024FEE8CB6A8
+[LOG] SoundI::release                          : Bateau-loop (0000024FEE8CA418)
+[LOG] SoundI::release                          :     Bateau-loop (0000024FE14A79E8)
+[LOG] SoundI::release                          :     Bateau-loop (0000024FEE8CDD78)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024FEE8CCFF8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024FEE8CCFF8
+[LOG] SystemI::createSound                     : filename = FMODAsset/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024FEE8CA418 : node = 00000252495F0970
+[LOG] SystemI::createSound                     : add node to async list : head = 0000024FE62390E8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024FEE8CA418
+[LOG] SystemI::createSoundInternal             :     Create name='FMODAsset/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5280864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 18624
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000252495F0A80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bateau-loop', format=5, channels=2, frequency=48000, lengthbytes=471680, lengthpcm=1720161, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.980103.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024FEE8CA418
+[LOG] SoundI::release                          : Bateau-loop (0000024FEE8CB6A8)
+[LOG] SoundI::release                          :     Bateau-loop (0000024FE14A4E08)
+[LOG] SoundI::release                          :     Bateau-loop (0000024FEE8CCFF8)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024FEE8CB198
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024FEE8CB198
+[LOG] SystemI::createSound                     : filename = FMODAsset/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024FEE8CCFF8 : node = 00000252495F41B0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000024FE62390E8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024FEE8CCFF8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODAsset/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5280864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 18624
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000252495F42C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bateau-loop', format=5, channels=2, frequency=48000, lengthbytes=471680, lengthpcm=1720161, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.980103.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024FEE8CCFF8
+[LOG] SoundI::release                          : Bateau-loop (0000024FEE8CA418)
+[LOG] SoundI::release                          :     Bateau-loop (0000024FE14A79E8)
+[LOG] SoundI::release                          :     Bateau-loop (0000024FEE8CB198)
+[LOG] SystemI::createSound                     : filename = FMODAsset/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024FEDC90168 : node = 00000252495F42F0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000024FE62390E8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024FEDC90168
+[LOG] SystemI::createSoundInternal             :     Create name='FMODAsset/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5280864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 18624
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000252495F4400
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bateau-loop', format=5, channels=2, frequency=48000, lengthbytes=471680, lengthpcm=1720161, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.980103.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024FEDC90168
+[LOG] SoundI::release                          : Bateau-loop (0000024FEE8CCFF8)
+[LOG] SoundI::release                          :     Bateau-loop (0000024FE14A5CA8)
+[LOG] SoundI::release                          :     Bateau-loop (0000024FE8110888)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024FEDC8F238
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024FEDC8F238
+[LOG] SystemI::createSound                     : filename = FMODAsset/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024FE8110888 : node = 00000252495F4CF0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000024FE62390E8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024FE8110888
+[LOG] SystemI::createSoundInternal             :     Create name='FMODAsset/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5280864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 18624
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000252495F4E00
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bateau-loop', format=5, channels=2, frequency=48000, lengthbytes=471680, lengthpcm=1720161, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.980103.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024FE8110888
+[LOG] SoundI::release                          : Bateau-loop (0000024FEDC90168)
+[LOG] SoundI::release                          :     Bateau-loop (0000024FE14A5FE8)
+[LOG] SoundI::release                          :     Bateau-loop (0000024FEDC8F238)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024FE810F958
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024FE810F958
+[LOG] SystemI::createSound                     : filename = FMODAsset/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024FE81055A8 : node = 00000252495F41B0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000024FE62390E8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024FE81055A8
+[LOG] SystemI::createSoundInternal             :     Create name='FMODAsset/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5280864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 18624
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000252495F42C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bateau-loop', format=5, channels=2, frequency=48000, lengthbytes=471680, lengthpcm=1720161, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.980103.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024FE81055A8
+[LOG] SoundI::release                          : Bateau-loop (0000024FE8110888)
+[LOG] SoundI::release                          :     Bateau-loop (0000024FE14A5CA8)
+[LOG] SoundI::release                          :     Bateau-loop (0000024FE810F958)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024FE81069E8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024FE81069E8
+[LOG] SoundI::release                          : Bateau-loop (0000024FE81055A8)
+[LOG] SoundI::release                          :     Bateau-loop (0000024FE14A4E08)
+[LOG] SoundI::release                          :     Bateau-loop (0000024FE81069E8)
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
