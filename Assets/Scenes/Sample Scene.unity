@@ -1768,6 +1768,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1081371352094768400, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b4c0e24659ade3948a20cb54121d9890, type: 2}
     - target: {fileID: 1089546659404686675, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
       propertyPath: m_Name
       value: MyShip_3
@@ -1832,6 +1836,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1571909033}
+    - target: {fileID: 3516472835857050631, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 938855b67357b2247904e4f570a20088, type: 2}
     - target: {fileID: 3902444931323203682, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1840,6 +1848,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5085871619371944978, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8fd4cdff38bd2a64fac9a307207972ea, type: 2}
+    - target: {fileID: 6609569901057870286, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c978a742d9dd2b045a4ec88b5575208b, type: 2}
     - target: {fileID: 7155104576249581796, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0.304
@@ -3195,6 +3211,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1081371352094768400, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b4c0e24659ade3948a20cb54121d9890, type: 2}
     - target: {fileID: 1089546659404686675, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
       propertyPath: m_Name
       value: MyShip_2
@@ -3259,6 +3279,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 421216871}
+    - target: {fileID: 3516472835857050631, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 938855b67357b2247904e4f570a20088, type: 2}
     - target: {fileID: 3902444931323203682, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -3267,6 +3291,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5085871619371944978, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8fd4cdff38bd2a64fac9a307207972ea, type: 2}
+    - target: {fileID: 6609569901057870286, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c978a742d9dd2b045a4ec88b5575208b, type: 2}
     - target: {fileID: 7155104576249581796, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0.304
@@ -3527,10 +3559,22 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 770779869}
+    - target: {fileID: 3361283184322232289, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8fd4cdff38bd2a64fac9a307207972ea, type: 2}
+    - target: {fileID: 3713464989555227197, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c978a742d9dd2b045a4ec88b5575208b, type: 2}
     - target: {fileID: 3773307189758427768, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
       propertyPath: equipment
       value: 
       objectReference: {fileID: 8719167792090396813, guid: 956e6a5f9f043c348b23915c4c094ae5, type: 3}
+    - target: {fileID: 6412014383940182004, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 938855b67357b2247904e4f570a20088, type: 2}
     - target: {fileID: 7241138249341053858, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
       propertyPath: equipment
       value: 
@@ -3615,6 +3659,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7435660645359849187, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b4c0e24659ade3948a20cb54121d9890, type: 2}
     - target: {fileID: 8887822480350731536, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
       propertyPath: m_Mesh
       value: 
