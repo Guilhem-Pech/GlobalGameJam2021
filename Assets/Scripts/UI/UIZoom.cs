@@ -33,14 +33,10 @@ public class UIZoom : MonoBehaviour
         Ship.Equipment leftEquipment = pawn.leftSlot.equipment;
         Ship.Equipment rightEquipment = pawn.rightSlot.equipment;
 
-        if (frontEquipment) frontSlot.GetComponent<InventorySlot>().Equipment = frontEquipment;
-        else frontSlot.GetComponent<InventorySlot>().Equipment = null;
-        if (backEquipment) backSlot.GetComponent<InventorySlot>().Equipment = backEquipment;
-        else backSlot.GetComponent<InventorySlot>().Equipment = null;
-        if (leftEquipment) leftSlot.GetComponent<InventorySlot>().Equipment = leftEquipment;
-        else leftSlot.GetComponent<InventorySlot>().Equipment = null;
-        if (rightEquipment) rightSlot.GetComponent<InventorySlot>().Equipment = rightEquipment;
-        else rightSlot.GetComponent<InventorySlot>().Equipment = null;
+        frontSlot.GetComponent<InventorySlot>().Equipment = frontEquipment;
+        backSlot.GetComponent<InventorySlot>().Equipment = backEquipment;
+        leftSlot.GetComponent<InventorySlot>().Equipment = leftEquipment;
+        rightSlot.GetComponent<InventorySlot>().Equipment = rightEquipment;
     }
 
 

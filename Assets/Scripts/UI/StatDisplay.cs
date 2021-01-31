@@ -15,6 +15,10 @@ public class StatDisplay : MonoBehaviour
         }
     }
 
+    private void Start() {
+        Show(false);
+    }
+
     [SerializeField] private InputReader inputReader;
     [SerializeField] private GameObject cardboard;
     [SerializeField] private TMPro.TextMeshProUGUI equipmentName;

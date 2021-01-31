@@ -30,8 +30,12 @@ public class GameManager : MonoBehaviour
         scoreUI.RefreshLegendScore(inventory.legend);
     }
 
+    private bool isInExploMode = true;
+
     public void EnterIslandMode()
     {
+        if(!isInExploMode) return;
+
         PlayerController player = PlayerController.Instance;
         player.directionCursor.Show(false);
         islandUI.Show();
@@ -40,9 +44,13 @@ public class GameManager : MonoBehaviour
         exploration?.Stop();
         docked?.Play();
         
+        isInExploMode = false;
     }
+
     public void EnterExploMode()
     {
+        if(isInExploMode) return;
+
         PlayerController player = PlayerController.Instance;
         player.enabled = true;
         // player.directionCursor.Show(true);
@@ -50,7 +58,10 @@ public class GameManager : MonoBehaviour
         islandCamera.Priority = 0;
         exploration?.Play();
         docked?.Stop();
+
+        isInExploMode = true;
     }
+
     private void Start()
     {
         ambient?.Play();

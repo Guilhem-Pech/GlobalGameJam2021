@@ -20,9 +20,11 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             UpdateSprite();
         }
     }
+    private Vector3 baseScale;
 
-    private void Start() {
+    private void Awake() {
         equipment = null;
+        baseScale = transform.localScale;
     }
 
     public void UpdateSprite()
@@ -33,19 +35,19 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             return;
         }
         GetComponent<Image>().sprite = equipment.Sprite;
-    }
+    }    
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        // transform.DOPunchScale(new Vector3(0.1f, 0.1f, 0.1f), 0.4f);
+        transform.DOScale(baseScale * 1.1f, 0.2f);
         if (!equipment) return;
-        Debug.Log("hell");
         StatDisplay.Instance.LoadStats(equipment);
         StatDisplay.Instance.Show();
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        transform.DOScale(baseScale, 0.2f);
         StatDisplay.Instance.Show(false);
     }
 }
