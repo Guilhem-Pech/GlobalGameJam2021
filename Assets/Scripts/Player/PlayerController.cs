@@ -69,7 +69,9 @@ public class PlayerController : MonoBehaviour
             _isRightClickPressed = false;
         if (!context.performed) return;
         _isRightClickPressed = true;
-        shipBell.PlayOneShotAttached(gameObject);
+        
+        if(!ScreenToWorld(inputReader.GetMousePosition()).IsNearlyEqual(transform.position, pawn.slowDistance))
+            shipBell.PlayOneShotAttached(gameObject);
     }
 
     private void Update()

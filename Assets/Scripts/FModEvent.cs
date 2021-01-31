@@ -40,6 +40,14 @@ public class FModEvent
         return Play();
     }
 
+    public RESULT PlayIfNotAlreadyPlaying()
+    {
+        eventInstance.getPaused(out bool isPaused);
+        if (!eventInstance.isValid() || isPaused)
+            return Play();
+        return RESULT.ERR_INITIALIZATION;
+    }
+
     public RESULT Play()
     {
         if (eventReference == null) return RESULT.ERR_INVALID_STRING;

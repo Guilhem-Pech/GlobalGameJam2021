@@ -38,6 +38,8 @@ public class Pawn : MonoBehaviour
 
     public int GoldPossessed { get; set; }
 
+    public FModEvent movementEvent;
+    
     public EquipmentSlot leftSlot;
     public EquipmentSlot rightSlot;
     public EquipmentSlot frontSlot;
@@ -57,6 +59,7 @@ public class Pawn : MonoBehaviour
         _speedModifierByDistance = target.SqrDistance(Position)>fastDistance*fastDistance?fastSpeed:(target.SqrDistance(Position)>slowDistance*slowDistance?slowSpeed:0);
         _target = target;
         RotateToward(target);
+        movementEvent?.PlayIfNotAlreadyPlaying();
     }
 
     /// <summary>
@@ -74,6 +77,7 @@ public class Pawn : MonoBehaviour
     /// </summary>
     public void Stop()
     {
+        movementEvent.Stop();
         _target = _rigidbody.position;
     }
     

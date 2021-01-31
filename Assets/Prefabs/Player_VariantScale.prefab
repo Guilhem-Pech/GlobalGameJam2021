@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4701158094562453023, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
+      propertyPath: shipBell.eventReference
+      value: event:/Ship/BellShip
+      objectReference: {fileID: 0}
     - target: {fileID: 7258083721583073806, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -33,7 +37,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 94cadfc4c9d91a74ab3e2faed75ebf14, type: 2}
     - target: {fileID: 7435390894937036448, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Player_VariantScale
       objectReference: {fileID: 0}
     - target: {fileID: 7435390894937036453, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
       propertyPath: m_Materials.Array.data[0]
