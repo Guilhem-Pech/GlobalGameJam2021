@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputReader: {fileID: 11400000, guid: 39b0cddf4804ae94e93cf37d1f099162, type: 2}
   pawn: {fileID: 7435390894937036454}
+  shipBell:
+    eventReference: 
   directionCursor: {fileID: 0}
 --- !u!114 &7296889954898484694
 MonoBehaviour:
@@ -130,6 +132,10 @@ PrefabInstance:
     - target: {fileID: 1089546659404686677, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
       propertyPath: slowDistance
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089546659404686677, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
+      propertyPath: movementEvent.eventReference
+      value: event:/Ship/BoatNavigate
       objectReference: {fileID: 0}
     - target: {fileID: 1089546659404686679, guid: 53497d6501886a247a21b7516b2fe9b7, type: 3}
       propertyPath: m_Mesh

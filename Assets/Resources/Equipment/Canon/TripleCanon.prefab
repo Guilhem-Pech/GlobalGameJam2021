@@ -229,6 +229,8 @@ MonoBehaviour:
   range: 30
   ballScale: 2
   prefab: {fileID: 0}
+  fireEvent:
+    eventReference: event:/Ship/Fire
 --- !u!1 &5881332950544782611
 GameObject:
   m_ObjectHideFlags: 0

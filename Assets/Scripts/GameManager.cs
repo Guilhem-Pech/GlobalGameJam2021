@@ -18,7 +18,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private UIZoom islandUI;
     [SerializeField] private UIBase scoreUI;
     [SerializeField] private Cinemachine.CinemachineVirtualCamera islandCamera;
-
+    public FModEvent docked;
+    public FModEvent exploration;
+    public FModEvent ambient;
+    
     public void UpdateScore()
     {
         PlayerController player = PlayerController.Instance;
@@ -34,8 +37,10 @@ public class GameManager : MonoBehaviour
         islandUI.Show();
         islandCamera.Priority = 10;
         player.enabled = false;
+        exploration?.Stop();
+        docked?.Play();
+        
     }
-
     public void EnterExploMode()
     {
         PlayerController player = PlayerController.Instance;
@@ -43,6 +48,15 @@ public class GameManager : MonoBehaviour
         // player.directionCursor.Show(true);
         islandUI.Hide();
         islandCamera.Priority = 0;
+        exploration?.Play();
+        docked?.Stop();
     }
-
+    private void Start()
+    {
+        ambient?.Play();
+        docked?.Stop();
+        exploration?.Play();
+    }
 }
+   
+

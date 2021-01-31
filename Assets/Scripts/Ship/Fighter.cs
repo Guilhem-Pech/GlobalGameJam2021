@@ -7,8 +7,10 @@ public class Fighter : MonoBehaviour
     [SerializeField] private float maxHealth;
     [SerializeField] private Gradient gradient;
     public float health;
+    private Image _image;
 
     private void Start() {
+        _image = healthBar.fillRect.GetComponent<Image>();
         health = maxHealth;
         healthBar.maxValue = maxHealth;
         healthBar.value = health;
@@ -26,7 +28,7 @@ public class Fighter : MonoBehaviour
 
     protected virtual void Update() {
         healthBar.value = health;
-        healthBar.fillRect.GetComponent<Image>().color = gradient.Evaluate(health / maxHealth);
+        _image.color = gradient.Evaluate(health / maxHealth);
         if (health <= 0)
         {
             Die();

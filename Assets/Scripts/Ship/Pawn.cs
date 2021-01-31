@@ -36,16 +36,21 @@ public class Pawn : MonoBehaviour
     
     public Vector2 Position => _rigidbody.position;
 
+    public int GoldPossessed { get; set; }
+
+    public FModEvent movementEvent;
+    
     public EquipmentSlot leftSlot;
     public EquipmentSlot rightSlot;
     public EquipmentSlot frontSlot;
     public EquipmentSlot backSlot;
-    
+
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _target = _rigidbody.position;
         _angleTarget = _rigidbody.rotation;
+        GoldPossessed = 0;
     }
 
     public void SetTarget(Vector2 target)
@@ -54,6 +59,7 @@ public class Pawn : MonoBehaviour
         _speedModifierByDistance = target.SqrDistance(Position)>fastDistance*fastDistance?fastSpeed:(target.SqrDistance(Position)>slowDistance*slowDistance?slowSpeed:0);
         _target = target;
         RotateToward(target);
+        movementEvent?.PlayIfNotAlreadyPlaying();
     }
 
     /// <summary>
@@ -71,6 +77,7 @@ public class Pawn : MonoBehaviour
     /// </summary>
     public void Stop()
     {
+        movementEvent.Stop();
         _target = _rigidbody.position;
     }
     
