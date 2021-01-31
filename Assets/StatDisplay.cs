@@ -23,6 +23,7 @@ public class StatDisplay : MonoBehaviour
     
     public void Show(bool show = true)
     {
+        Debug.Log("set active");
         cardboard.SetActive(show);
     }
 
@@ -36,6 +37,6 @@ public class StatDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<RectTransform>().position = inputReader.GetMousePosition() + new Vector2(1,1);
+        GetComponent<RectTransform>().position = inputReader.GetMousePosition() + new Vector2(1,1) * 2;
     }
 }
