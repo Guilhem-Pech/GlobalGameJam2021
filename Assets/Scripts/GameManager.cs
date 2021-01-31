@@ -21,8 +21,7 @@ public class GameManager : MonoBehaviour
     public FModEvent docked;
     public FModEvent exploration;
     public FModEvent ambient;
-
-a
+    
     public void UpdateScore()
     {
         PlayerController player = PlayerController.Instance;
@@ -42,7 +41,6 @@ a
         docked?.Play();
         
     }
-
     public void EnterExploMode()
     {
         PlayerController player = PlayerController.Instance;
@@ -53,12 +51,12 @@ a
         exploration?.Play();
         docked?.Stop();
     }
-
-}
     private void Start()
     {
         ambient?.Play();
         docked?.Stop();
         exploration?.Play();
     }
+}
+   
 

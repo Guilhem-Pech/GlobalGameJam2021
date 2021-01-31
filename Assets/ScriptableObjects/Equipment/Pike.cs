@@ -8,13 +8,19 @@ namespace Ship
         [SerializeField] private int value = 10;
         public override int Value { get => value; protected set => this.value = value; }
         [SerializeField] private String _name = "Basic Pike";
-        public String Name { get => _name; set => _name = value;}
+        public override String Name { get => _name; set => _name = value; }
         [Tooltip("Damage done per second, not per tic")]
         [SerializeField] private int damage = 20;
         public int Damage { get => damage; set => damage = value; }
 
         [SerializeField] private float counter = 0;
         [SerializeField] private float damageRate = 4;
+
+        private static string spritePath = "Sprites/Pike";
+        public override Sprite Sprite
+        {
+            get => Resources.Load<Sprite>(spritePath);
+        }
 
         public override void DoAction()
         {
@@ -29,9 +35,15 @@ namespace Ship
         {
             Fighter fighter = other.GetComponent<Fighter>();
             if (fighter == null || counter < 1/damageRate) return;
-            Debug.Log("Collision with Fighter");
             fighter.Damage(damage/damageRate);
             counter = 0;
+        }
+
+        public override String DataToString()
+        {
+            String data = "";
+            data += $"Damage Per Second: {damage.ToString()}";
+            return data;
         }
     }
 }

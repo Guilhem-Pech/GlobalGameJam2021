@@ -46,6 +46,52 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 350
+--- !u!114 &-6263483343074696658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Docked
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Docked
+  guid: 2256b55da10c71469d9c9bb10968f298
+  Banks:
+  - {fileID: 817713403295459842}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 66000
+--- !u!114 &-6133296420730116612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Exploration
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Exploration
+  guid: 91e22b0ee05a844a908cf62181da5952
+  Banks:
+  - {fileID: 817713403295459842}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 85000
 --- !u!114 &-5429575353092668650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,12 +257,14 @@ MonoBehaviour:
   - {fileID: 6384082644940682081}
   - {fileID: -3281423840835494503}
   - {fileID: -4247205869174704480}
+  - {fileID: -6263483343074696658}
+  - {fileID: -6133296420730116612}
   EditorParameters: []
   MasterBanks:
   - {fileID: 817713403295459842}
   StringsBanks:
   - {fileID: 4049707282790471250}
-  stringsBankWriteTime: 637477046213571763
+  stringsBankWriteTime: 637477080721534007
   cacheVersion: 6
 --- !u!114 &817713403295459842
 MonoBehaviour:
@@ -233,7 +281,7 @@ MonoBehaviour:
   Path: FMODAsset/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637477046213511946
+  lastModified: 637477080721464200
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -274,11 +322,11 @@ MonoBehaviour:
   Path: FMODAsset/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637477046213571763
+  lastModified: 637477080721534007
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1218
+    Value: 1316
   Exists: 1
 --- !u!114 &4312551696579626686
 MonoBehaviour:

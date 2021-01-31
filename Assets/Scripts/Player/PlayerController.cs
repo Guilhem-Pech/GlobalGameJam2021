@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
 
     // Start is called before the first frame update
     [SerializeField] private InputReader inputReader;
-    [SerializeField] private Pawn pawn;
+    public  Pawn pawn;
     private Camera _currentCamera;
     private bool _isRightClickPressed = false;
     public FModEvent shipBell;
