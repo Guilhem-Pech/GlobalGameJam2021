@@ -16,6 +16,11 @@ public class Fighter : MonoBehaviour
         healthBar.value = health;
     }
 
+    public void Damage(float amount)
+    {
+        Damage((int)amount);
+    }
+
     public void Damage(int amount)
     {
         health -= amount;

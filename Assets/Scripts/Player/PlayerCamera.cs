@@ -9,7 +9,7 @@ namespace Player
         private CinemachineVirtualCamera _virtualCamera;
         public PlayerController player;
 
-        private void OnValidate()
+        private void OnValidate()   
         {
             if (player == null) player = FindObjectOfType<PlayerController>();
             if (player == null) player = GameObject.Find("Player").GetComponent<PlayerController>();

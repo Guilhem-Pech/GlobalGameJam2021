@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class DirectionCursor : MonoBehaviour
 {
     private PlayerController playerController = null;
+    [SerializeField] private Image Head;
     [SerializeField] private Image Tail1;
     [SerializeField] private Image Tail2;
 
@@ -28,6 +29,13 @@ public class DirectionCursor : MonoBehaviour
     public void UpdateCursorAngle(float angle)
     {
         transform.eulerAngles = new Vector3(0, 0, angle);
+    }
+
+    public void Show(bool show = true)
+    {
+        Head.enabled = show;
+        Tail1.enabled = show;
+        Tail2.enabled = show;
     }
 
     /* unused code

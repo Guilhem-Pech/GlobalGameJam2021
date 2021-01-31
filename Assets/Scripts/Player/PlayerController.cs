@@ -1,6 +1,4 @@
-using System;
-using Equipment;
-using Player;
+    using Player;
 using Ship;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -8,6 +6,17 @@ using Utils;
 
 public class PlayerController : MonoBehaviour
 {
+    // Singleton
+    private static PlayerController instance = null;
+    public static PlayerController Instance { get => instance; }
+    private void Awake(){
+        if (instance == null){
+            instance = this;
+        } else {
+            Destroy(this);
+        }
+    }
+
     // Start is called before the first frame update
     [SerializeField] private InputReader inputReader;
     [SerializeField] private Pawn pawn;
