@@ -56,6 +56,16 @@ namespace Ship
             fireEvent.AttatchToGameobject(gameObject);
         }
 
+        private void OnDestroy()
+        {
+            fireEvent.Release();
+        }
+
+        private void OnDisable()
+        {
+            fireEvent.Release();
+        }
+
         private void OnDrawGizmosSelected() {
             Gizmos.color = Color.red;
             foreach (GameObject spawnPoint in spawnPoints)

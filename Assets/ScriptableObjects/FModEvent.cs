@@ -12,10 +12,17 @@ namespace ScriptableObjects
         [FMODUnity.EventRef] public string eventReference;
         public FMOD.Studio.EventInstance eventInstance;
 
-        private void Stop()
+        public void Stop()
         {
             if(eventInstance.isValid())
                 eventInstance.stop(STOP_MODE.ALLOWFADEOUT);
+        }
+
+        public void Release()
+        {
+            if (!eventInstance.isValid()) return;
+            eventInstance.stop(STOP_MODE.ALLOWFADEOUT);
+            eventInstance.release();
         }
 
         public void CreateInstance()
