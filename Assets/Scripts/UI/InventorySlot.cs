@@ -37,8 +37,9 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        transform.DOPunchScale(new Vector3(0.1f, 0.1f, 0.1f), 0.2f);
+        // transform.DOPunchScale(new Vector3(0.1f, 0.1f, 0.1f), 0.4f);
         if (!equipment) return;
+        Debug.Log("hell");
         StatDisplay.Instance.LoadStats(equipment);
         StatDisplay.Instance.Show();
     }

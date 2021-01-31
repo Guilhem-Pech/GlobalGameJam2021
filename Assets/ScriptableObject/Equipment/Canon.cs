@@ -64,11 +64,11 @@ namespace Ship
         public override string DataToString()
         {
             String data = "";
-            data += $"Damage Per Canon Ball: {Damage.ToString()}";
-            data += $"Range: {Range.ToString()}";
-            data += $"Velocity: {Velocity.ToString()}";
-            data += $"Canon Ball Size: {BallScale.ToString()}";
-            data += $"Rate of Fire: {FireRate.ToString()}";
+            data += $"Damage Per Canon Ball: {Damage.ToString()}\n";
+            data += $"Range: {Range.ToString()}\n";
+            data += $"Velocity: {Velocity.ToString()}\n";
+            data += $"Canon Ball Size: {BallScale.ToString()}\n";
+            data += $"Rate of Fire: {FireRate.ToString()}\n";
             return data;
         }
     }
