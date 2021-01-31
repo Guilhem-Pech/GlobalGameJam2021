@@ -1,8 +1,9 @@
-    using Player;
-    using Ship;
+using Player;
+using Ship;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Utils;
+using DG.Tweening;
 
 public class PlayerController : MonoBehaviour
 {
@@ -24,7 +25,8 @@ public class PlayerController : MonoBehaviour
     private bool _isRightClickPressed = false;
     public FModEvent shipBell;
     
-    public DirectionCursor directionCursor;
+
+    [HideInInspector] public DirectionCursor directionCursor;
     private Vector2 _target;
 
     private void OnValidate()
@@ -35,11 +37,19 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        inputReader.onRightClick.AddListener(SetTarget);
-        inputReader.onLeftClick.AddListener(FireEquipment);
-
         _currentCamera = Camera.main;
         _target = Vector2.zero;
+    }
+
+    private void OnEnable() {
+        inputReader.onRightClick.AddListener(SetTarget);
+        inputReader.onLeftClick.AddListener(FireEquipment);
+    }
+
+    private void OnDisable()
+    {
+        inputReader.onRightClick.RemoveListener(SetTarget);
+        inputReader.onLeftClick.RemoveListener(FireEquipment);
     }
 
     private void FireEquipment(InputAction.CallbackContext context)
@@ -47,7 +57,7 @@ public class PlayerController : MonoBehaviour
         // TODO Check if the equipment we're trying to use is our (lol)
         if (!context.performed) return;
         Vector2 mousePos = ScreenToWorld(inputReader.GetMousePosition());
-        Collider2D overlap = Physics2D.OverlapBox(mousePos, Vector2.one, 0, 1 << 6);
+        Collider2D overlap = Physics2D.OverlapBox(mousePos, Vector2.one * 0.5f, 0, 1 << 6);
         if (overlap && overlap.transform.parent.TryGetComponent(out EquipmentSlot equipment))
         {
             equipment.DoAction();
@@ -111,6 +121,18 @@ public class PlayerController : MonoBehaviour
                 float distance = target.SqrDistance(pawn.transform.position);
                 directionCursor.UpdateCursorForce(distance > pawn.fastDistance * pawn.fastDistance ? 2 : 1);
             }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if (other.gameObject.CompareTag("Pontoon"))
+        {
+            Transform targetPos = other.transform.Find("TargetTransform").transform;
+            Vector2 targetUp = targetPos.up;
+            Vector2 target = pawn.Position + targetUp;
+            pawn.SetTarget(target);
+            _target = Vector2.zero;
+            GameManager.Instance.EnterIslandMode();    
         }
     }
 }

@@ -16,9 +16,34 @@ namespace Ship
             }
         }
 
+        private void Start() {
+            GameManager.Instance.UpdateScore();
+            equipments = new List<Equipment>(10);
+            if(!cheat) return;
+            equipments.Add(new Canon());
+            equipments.Add(new Canon());
+            equipments.Add(new Pike());
+        }
+
         public List<Equipment> equipments;
-        public int gold;
-        public int legend;
+        private int _gold;
+        public int gold { get => _gold; }
+        private int _legend;
+        public int legend { get => _legend; }
+
+        [SerializeField] private bool cheat;
+
+        public void AddGold(int score)
+        {
+            _gold += score;
+            GameManager.Instance.UpdateScore();            
+        }
+
+        public void AddLegend(int score)
+        {
+            _legend += score;
+            GameManager.Instance.UpdateScore();            
+        }
 
         public GameObject CreateEquipment(Equipment equipment)
         {

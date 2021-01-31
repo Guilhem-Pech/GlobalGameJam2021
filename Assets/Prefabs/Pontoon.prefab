@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 7105240511500605788}
   - component: {fileID: 6187114399253177622}
   - component: {fileID: 5011133799426540023}
-  - component: {fileID: 1355105488179696518}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Deck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,13 +81,47 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!61 &1355105488179696518
+--- !u!1 &3726881246105691036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3726881246105691024}
+  - component: {fileID: 5297073465739433949}
+  m_Layer: 7
+  m_Name: Pontoon
+  m_TagString: Pontoon
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3726881246105691024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3726881246105691036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children:
+  - {fileID: 7105240511500605788}
+  - {fileID: 4274063954806015686}
+  - {fileID: 399292012923301151}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &5297073465739433949
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2205100867859311634}
+  m_GameObject: {fileID: 3726881246105691036}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -106,9 +139,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.118575, y: 1.6522844}
   m_EdgeRadius: 0
---- !u!1 &3726881246105691036
+--- !u!1 &5000242106720624811
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,30 +149,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3726881246105691024}
-  m_Layer: 0
-  m_Name: Pontoon
+  - component: {fileID: 399292012923301151}
+  m_Layer: 7
+  m_Name: TargetTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3726881246105691024
+--- !u!4 &399292012923301151
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3726881246105691036}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 5000242106720624811}
+  m_LocalRotation: {x: -0, y: -0, z: -0.70710635, w: 0.7071073}
+  m_LocalPosition: {x: 0, y: 1.351, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 7105240511500605788}
-  - {fileID: 4274063954806015686}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 3726881246105691024}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &5629368236399487873
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +183,7 @@ GameObject:
   - component: {fileID: 4003975933488441077}
   - component: {fileID: 6238940990865550994}
   - component: {fileID: 3413069086491496016}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Leg_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +279,7 @@ GameObject:
   - component: {fileID: 1591674353396971813}
   - component: {fileID: 2126032022920223814}
   - component: {fileID: 8353676658810547616}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4274063954806015686}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}

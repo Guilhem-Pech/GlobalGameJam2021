@@ -26,7 +26,6 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log($"Starting conversation with {dialogue.name}");
         sentences.Clear();
         foreach(string sentence in dialogue.sentences)
         {
@@ -46,7 +45,6 @@ public class DialogueManager : MonoBehaviour
         }
         String sentence = sentences.Dequeue();
         sentenceText.text = sentence;
-        Debug.Log(sentence);
     }
 
     private void EndDialogue()
