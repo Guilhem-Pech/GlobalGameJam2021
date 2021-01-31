@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using DG.Tweening;
+using ScriptableObjects;
 
 namespace Ship
 {
@@ -25,6 +26,8 @@ namespace Ship
         public float BallScale { get => ballScale; set => ballScale = value; }
         public GameObject prefab;
 
+        [SerializeField] FModEvent fireEvent;
+        
         public override void DoAction()
         {
             if(counter < 1/fireRate) return;
@@ -40,11 +43,17 @@ namespace Ship
             }
             
             counter = 0;
-            transform.DOPunchScale(new Vector3(0.5f, 0.5f, 0.5f), 0.5f);    
+            transform.DOPunchScale(new Vector3(0.5f, 0.5f, 0.5f), 0.5f);
+            fireEvent.Play();
         }
 
         private void Update() {
             counter += Time.deltaTime;
+        }
+
+        private void Start()
+        {
+            fireEvent.AttatchToGameobject(gameObject);
         }
 
         private void OnDrawGizmosSelected() {

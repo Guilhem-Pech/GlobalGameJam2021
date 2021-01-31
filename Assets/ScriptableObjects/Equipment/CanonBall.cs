@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Ship
 {
-    public class CanonBall : MonoBehaviour
+    public class CanonBall :MonoBehaviour
     {
         [SerializeField] private int damage;
         public int Damage { get => damage; set => damage = value;}
