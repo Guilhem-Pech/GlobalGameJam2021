@@ -9,6 +9,9 @@ namespace Ship
         [SerializeField] private int damage;
         public int Damage { get => damage; set => damage = value;}
 
+        public FModEvent eventHit;
+        public FModEvent eventMiss;
+        
         [HideInInspector] public Vector3 direction;
         [HideInInspector] public float speed;
         [HideInInspector] public int range = 10;
@@ -21,6 +24,7 @@ namespace Ship
             if (fighter == null) return;
             Debug.Log("Collision with Fighter");
             fighter.Damage(damage);
+            eventHit.PlayOneShotAttached(gameObject);
             Destroy(this.gameObject);
         }
 
@@ -31,12 +35,13 @@ namespace Ship
                 internalCounter += Time.deltaTime * 10;   
                 speedModifier = Mathf.Lerp(1, 0.2f, internalCounter);
             }
-            transform.position = transform.position + (direction * speed * Time.deltaTime * speedModifier);
+            transform.position += (direction * (speed * Time.deltaTime * speedModifier));
             distance += speed * Time.deltaTime;
         }
 
         private void FallOutOfRange() {
             Debug.Log("Splash !");
+            eventMiss.PlayOneShotAttached(gameObject);
             Destroy(this.gameObject);  
         }
     }
