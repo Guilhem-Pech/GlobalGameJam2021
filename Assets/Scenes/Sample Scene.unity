@@ -3634,6 +3634,10 @@ PrefabInstance:
       propertyPath: cheat
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7296889954898484694, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
+      propertyPath: cheat
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7435390893812253643, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
       propertyPath: m_Mesh
       value: 

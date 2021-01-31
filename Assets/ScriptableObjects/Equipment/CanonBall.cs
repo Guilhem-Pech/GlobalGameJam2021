@@ -22,7 +22,6 @@ namespace Ship
         private void OnTriggerEnter2D(Collider2D other) {
             Fighter fighter = other.GetComponent<Fighter>();
             if (fighter == null) return;
-            Debug.Log("Collision with Fighter");
             fighter.Damage(damage);
             eventHit.PlayOneShotAttached(gameObject);
             Destroy(this.gameObject);
