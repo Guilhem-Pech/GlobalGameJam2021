@@ -5,14 +5,13 @@ namespace Ship
 {
     public class EquipmentSlot : MonoBehaviour
     {
-        public Equipment equipmentType;
+        public Equipment equipment;
 
         private void Start()
         {
-            if(equipmentType)
-                SpawnEquipment(equipmentType);
+            if(equipment)
+                SpawnEquipment(equipment);
         }
-
 
         private void DeleteEquipment(bool deleteType = true)
         {
@@ -20,20 +19,20 @@ namespace Ship
             {
                 Destroy(transform.GetChild(i));
             }
-            if(deleteType) equipmentType = null;
+            if(deleteType) equipment = null;
         }
         
         public void SpawnEquipment(Equipment type)
         {
             DeleteEquipment();
-            equipmentType = type; 
-            equipmentType = Instantiate(equipmentType.gameObject, transform).GetComponent<Equipment>();
+            equipment = type; 
+            equipment = Instantiate(equipment.gameObject, transform).GetComponent<Equipment>();
         }
 
         public void DoAction()
         {
-            if(equipmentType)
-                equipmentType.DoAction();
+            if(equipment)
+                equipment.DoAction();
         }
         
     }

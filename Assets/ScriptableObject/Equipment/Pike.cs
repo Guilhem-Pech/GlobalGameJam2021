@@ -8,10 +8,10 @@ namespace Ship
         [SerializeField] private int value = 10;
         public override int Value { get => value; protected set => this.value = value; }
         [SerializeField] private String _name = "Basic Pike";
-        public String Name { get => _name; }
+        public String Name { get => _name; set => _name = value; }
         [Tooltip("Damage done per second, not per tic")]
         [SerializeField] private int damage = 20;
-        public int Damage { get => damage; }
+        public int Damage { get => damage; set => damage = value; }
 
         [SerializeField] private float counter = 0;
         [SerializeField] private float damageRate = 4;

@@ -200,9 +200,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 500
-  _name: Basic Canon
+  _name: Canon
   canonBallPrefab: {fileID: 1619724611784063577, guid: d7edb73ff5fef8742a91b643575469e8, type: 3}
-  spawnPoint: {fileID: 1287722552461596040}
+  spawnPoints:
+  - {fileID: 1287722552461596040}
   velocity: 50
   fireRate: 2
   range: 30

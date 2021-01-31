@@ -7,7 +7,7 @@ namespace Ship
     public class CanonBall : MonoBehaviour
     {
         [SerializeField] private int damage;
-        public int Damage { get => damage; }
+        public int Damage { get => damage; set => damage = value;}
 
         [HideInInspector] public Vector3 direction;
         [HideInInspector] public float speed;
