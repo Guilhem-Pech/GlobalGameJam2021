@@ -1,8 +1,9 @@
-    using Player;
+using Player;
 using Ship;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Utils;
+using DG.Tweening;
 
 public class PlayerController : MonoBehaviour
 {
@@ -102,5 +103,18 @@ public class PlayerController : MonoBehaviour
                 directionCursor.UpdateCursorForce(distance>pawn.fastDistance*pawn.fastDistance?2:1);
             }
         }   
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        Debug.Log(other.gameObject.tag);
+        if (other.gameObject.CompareTag("Pontoon"))
+        {
+            Transform targetPos = other.transform.Find("TargetTransform").transform;
+            Vector2 targetUp = targetPos.up;
+            Vector2 target = pawn.Position + targetUp;
+            pawn.SetTarget(target);
+            _target = Vector2.zero;
+            GameManager.Instance.EnterIslandMode();    
+        }
     }
 }

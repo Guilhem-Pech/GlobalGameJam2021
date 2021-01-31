@@ -17,6 +17,7 @@ public class DirectionCursor : MonoBehaviour
     }
 
     public void UpdateCursorPos(Vector2 onScreenTarget) {
+        Show();
         this.transform.position = onScreenTarget;
     }
 
