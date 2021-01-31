@@ -36,16 +36,19 @@ public class Pawn : MonoBehaviour
     
     public Vector2 Position => _rigidbody.position;
 
+    public int GoldPossessed { get; set; }
+
     public EquipmentSlot leftSlot;
     public EquipmentSlot rightSlot;
     public EquipmentSlot frontSlot;
     public EquipmentSlot backSlot;
-    
+
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _target = _rigidbody.position;
         _angleTarget = _rigidbody.rotation;
+        GoldPossessed = 0;
     }
 
     public void SetTarget(Vector2 target)
