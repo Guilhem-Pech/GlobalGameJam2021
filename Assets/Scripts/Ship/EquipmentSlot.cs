@@ -25,7 +25,7 @@ namespace Ship
 
         public void SpawnEquipment(Equipment type)
         {
-            int layer = transform.parent.gameObject.layer;
+            int layer = gameObject.layer;
             equipmentHandler = Instantiate(equipment.Prefab, transform).GetComponent<EquipmentHandler>();
             equipmentHandler.Equipment = equipment;
             equipmentHandler.gameObject.layer = layer;
