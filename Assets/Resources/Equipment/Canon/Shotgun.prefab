@@ -321,7 +321,7 @@ MonoBehaviour:
   - {fileID: 125725981486163034}
   - {fileID: 2024664967042096426}
   - {fileID: 3131327825472552920}
-  velocity: 50
+  velocity: 100
   fireRate: 1
   range: 25
   ballScale: 1

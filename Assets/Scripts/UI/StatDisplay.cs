@@ -27,7 +27,6 @@ public class StatDisplay : MonoBehaviour
     
     public void Show(bool show = true)
     {
-        Debug.Log("set active");
         cardboard.SetActive(show);
     }
 

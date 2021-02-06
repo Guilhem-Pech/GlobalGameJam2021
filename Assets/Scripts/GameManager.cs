@@ -68,6 +68,17 @@ public class GameManager : MonoBehaviour
         docked?.Stop();
         exploration?.Play();
     }
+
+    #region AccessiblePrefabReferences
+
+    public GameObject baseCanonPrefab;
+    public GameObject tripleCanonPrefab;
+    public GameObject blastCanonPrefab;
+    public GameObject canonBallPrefab;
+    public GameObject basePikePrefab;
+    public GameObject tridentPrefab;
+
+    #endregion
 }
    
 

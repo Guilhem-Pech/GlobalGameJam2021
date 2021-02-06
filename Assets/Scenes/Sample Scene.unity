@@ -1329,6 +1329,10 @@ PrefabInstance:
       propertyPath: equipment
       value: 
       objectReference: {fileID: -2752026060420696737, guid: f5c14b2d36a4cfc4f88a11b6128041f8, type: 3}
+    - target: {fileID: 7296889954898484694, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
+      propertyPath: cheat
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7435390894937036448, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
       propertyPath: m_Name
       value: Player Variant
@@ -3208,14 +3212,6 @@ PrefabInstance:
       propertyPath: islandCamera
       value: 
       objectReference: {fileID: 265129867}
-    - target: {fileID: 4754128335534308568, guid: 4b1a408d170b7e6459119a08f53839fb, type: 3}
-      propertyPath: docked.eventReference
-      value: event:/Music/Docked
-      objectReference: {fileID: 0}
-    - target: {fileID: 4754128335534308568, guid: 4b1a408d170b7e6459119a08f53839fb, type: 3}
-      propertyPath: exploration.eventReference
-      value: event:/Music/Exploration
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b1a408d170b7e6459119a08f53839fb, type: 3}
 --- !u!1001 &3726881246511432634

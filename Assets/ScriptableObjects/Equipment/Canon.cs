@@ -89,5 +89,11 @@ namespace Ship
             data += $"Rate of Fire: {FireRate.ToString()}\n";
             return data;
         }
+
+        public GameObject Create()
+        {
+            GameObject gameObject = GameManager.Instance.baseCanonPrefab;
+            return gameObject;
+        }
     }
 }
