@@ -1,6 +1,3 @@
-using System.Net.Mime;
-using System.Collections;
-using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -40,7 +37,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public void OnPointerEnter(PointerEventData eventData)
     {
         transform.DOScale(baseScale * 1.1f, 0.2f);
-        if (!equipment) return;
+        if (equipment == null) return;
         StatDisplay.Instance.LoadStats(equipment);
         StatDisplay.Instance.Show();
     }

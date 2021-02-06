@@ -6,6 +6,12 @@ namespace Ship
 {
     public class InventorySystem : MonoBehaviour
     {
+        [SerializeField] private int maxSlots;
+        public int MaxSlots
+        {
+            get => maxSlots;
+        }
+
         // Singleton
         private static InventorySystem instance = null;
         private void Awake(){
@@ -18,11 +24,7 @@ namespace Ship
 
         private void Start() {
             GameManager.Instance.UpdateScore();
-            equipments = new List<Equipment>(10);
-            if(!cheat) return;
-            equipments.Add(new Canon());
-            equipments.Add(new Canon());
-            equipments.Add(new Pike());
+            if(equipments == null) equipments = new List<Equipment>(10);
         }
 
         public List<Equipment> equipments;
@@ -30,8 +32,6 @@ namespace Ship
         public int gold { get => _gold; }
         private int _legend;
         public int legend { get => _legend; }
-
-        [SerializeField] private bool cheat;
 
         public void AddGold(int score)
         {
@@ -45,10 +45,10 @@ namespace Ship
             GameManager.Instance.UpdateScore();            
         }
 
-        public GameObject CreateEquipment(Equipment equipment)
+        public bool AddItem(Equipment equipment)
         {
-            GameObject gameObject = Instantiate(equipment.gameObject, transform.position, Quaternion.identity);
-            return gameObject;
+            if (equipments.Count >= maxSlots) return false;
+            return true;
         }
 
     }

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pontoon
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX
@@ -15,8 +16,8 @@ TagManager:
   - Equipment
   - Pontoon
   - Player
-  - AlliedProjectile
-  - 
+  - Allied
+  - Opponent
   - 
   - 
   - 

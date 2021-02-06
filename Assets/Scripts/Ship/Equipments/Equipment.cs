@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Ship
 {
-    public abstract class Equipment : MonoBehaviour
+    public abstract class Equipment: ScriptableObject
     {
 
         public abstract int Value
@@ -23,8 +23,12 @@ namespace Ship
             get;
         }
 
-        public abstract String DataToString(); 
-        public abstract void DoAction();
-        
+        public abstract GameObject Prefab
+        { 
+            get; 
+            set;
+        }
+
+        public abstract String DataToString();
     }
 }

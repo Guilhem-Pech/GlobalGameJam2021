@@ -6,10 +6,11 @@ namespace Ship
     public class EquipmentSlot : MonoBehaviour
     {
         public Equipment equipment;
+        private EquipmentHandler equipmentHandler;
 
         private void Start()
         {
-            if(equipment)
+            if(equipment != null)
                 SpawnEquipment(equipment);
         }
 
@@ -21,18 +22,19 @@ namespace Ship
             }
             if(deleteType) equipment = null;
         }
-        
+
         public void SpawnEquipment(Equipment type)
         {
-            DeleteEquipment();
-            equipment = type; 
-            equipment = Instantiate(equipment.gameObject, transform).GetComponent<Equipment>();
+            int layer = transform.parent.gameObject.layer;
+            equipmentHandler = Instantiate(equipment.Prefab, transform).GetComponent<EquipmentHandler>();
+            equipmentHandler.Equipment = equipment;
+            equipmentHandler.gameObject.layer = layer;
         }
 
         public void DoAction()
         {
-            if(equipment)
-                equipment.DoAction();
+            if(equipment != null)
+                equipmentHandler.DoAction();
         }
         
     }

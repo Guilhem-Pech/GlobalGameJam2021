@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Ship
 {
-    public class CanonBall :MonoBehaviour
+    public class CanonBall : MonoBehaviour
     {
         [SerializeField] private int damage;
         public int Damage { get => damage; set => damage = value;}
@@ -15,6 +15,7 @@ namespace Ship
         [HideInInspector] public Vector3 direction;
         [HideInInspector] public float speed;
         [HideInInspector] public int range = 10;
+        
         private float distance = 0;
         private float speedModifier = 1;
         private float internalCounter = 0;
