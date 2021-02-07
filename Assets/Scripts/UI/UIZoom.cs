@@ -16,7 +16,7 @@ public class UIZoom : MonoBehaviour
     [SerializeField] private RectTransform rightSlot;
     [SerializeField] private RectTransform leftSlot;
 
-    [SerializeField] private List<RectTransform> inventorySlots;
+    [SerializeField] private List<InventorySlot> inventorySlots;
     [SerializeField] private Sprite baseSprite;
 
     private void Start() {
@@ -39,6 +39,25 @@ public class UIZoom : MonoBehaviour
         rightSlot.GetComponent<InventorySlot>().Equipment = rightEquipment;
     }
 
+    private void PopulateInventorySlots()
+    {
+        Ship.InventorySystem inventory = PlayerController.Instance.GetComponent<Ship.InventorySystem>();
+        foreach (var equipment in inventory.equipments)
+        {
+            int i = 0;
+            while (inventorySlots[i].Equipment != null)
+                i++;
+            inventorySlots[i].Equipment = equipment;
+        }
+    }
+
+    private void EmptyInventorySlots()
+    {
+        foreach (InventorySlot slot in inventorySlots)
+        {
+            slot.Equipment = null;
+        }
+    }
 
     public void Hide()
     {
@@ -48,6 +67,7 @@ public class UIZoom : MonoBehaviour
         // Deactivate
         Boat.SetActive(false);
         Island.SetActive(false);
+        EmptyInventorySlots();
         // Inventory.SetActive(false);
     }
 
@@ -57,6 +77,7 @@ public class UIZoom : MonoBehaviour
         Boat.SetActive(true);
         Island.SetActive(true);
         PopulateBoatSlots();
+        PopulateInventorySlots();
         // Inventory.SetActive(true);
 
         // Tweening

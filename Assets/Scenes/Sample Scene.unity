@@ -1322,6 +1322,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3077581584263179318, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3773307189758427768, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
+      propertyPath: equipment
+      value: 
+      objectReference: {fileID: 11400000, guid: 68c8b17ce05d87b4a973479a9e00741a, type: 2}
+    - target: {fileID: 4797562930383358224, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658055220672344838, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296889954898484694, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
+      propertyPath: equipments.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 68c8b17ce05d87b4a973479a9e00741a, type: 2}
+    - target: {fileID: 7296889954898484694, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
+      propertyPath: equipments.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 68c8b17ce05d87b4a973479a9e00741a, type: 2}
+    - target: {fileID: 7296889954898484694, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
+      propertyPath: equipments.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 68c8b17ce05d87b4a973479a9e00741a, type: 2}
     - target: {fileID: 7435390894937036448, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
       propertyPath: m_Name
       value: Player Variant
@@ -1369,6 +1397,10 @@ PrefabInstance:
     - target: {fileID: 7435390894937036455, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9183930718387091590, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af49676cd5f2fcc40a4410feb30321af, type: 3}

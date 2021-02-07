@@ -19,7 +19,7 @@ namespace Ship
             Transform[] children = GetComponentsInChildren<Transform>();
             foreach (Transform child in children)
             {
-                child.gameObject.layer = gameObject.layer;
+                child.gameObject.layer = transform.parent.gameObject.layer;
             }
         }
 

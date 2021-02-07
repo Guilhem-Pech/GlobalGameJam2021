@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
 
     private void FireEquipment(InputAction.CallbackContext context)
     {
-        // TODO Check if the equipment we're trying to use is our (lol)
+        // TODO: Check if the equipment we're trying to use is ours (lol)
         if (!context.performed) return;
         Vector2 mousePos = ScreenToWorld(inputReader.GetMousePosition());
         Collider2D overlap = Physics2D.OverlapBox(mousePos, Vector2.one * 0.5f, 0, 1 << 6);

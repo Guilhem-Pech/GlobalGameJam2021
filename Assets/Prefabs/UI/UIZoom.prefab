@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 49222728277967881}
   - component: {fileID: 3160753895882155930}
   m_Layer: 0
-  m_Name: Slot_3
+  m_Name: Slot 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ RectTransform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 912850118795238845}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 8545517080248962669}
   - component: {fileID: 8821314052028707845}
   m_Layer: 0
-  m_Name: Slot_7
+  m_Name: Slot 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -194,7 +194,7 @@ RectTransform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 912850118795238845}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 1550995973786667773}
   - component: {fileID: 2381609484697797303}
   m_Layer: 0
-  m_Name: Slot_1
+  m_Name: Slot 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,7 +282,7 @@ RectTransform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 912850118795238845}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -354,7 +354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6012706110465995463
 RectTransform:
   m_ObjectHideFlags: 0
@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 6300334196903057690}
   - component: {fileID: 1130313179366732517}
   m_Layer: 0
-  m_Name: Slot
+  m_Name: Slot 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -498,7 +498,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 20, y: -20}
+  m_AnchoredPosition: {x: 59, y: -44}
   m_SizeDelta: {x: 686.9252, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7985355111582504770
@@ -766,8 +766,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000091552734, y: -6.3244}
-  m_SizeDelta: {x: 640.5006, y: 233.6386}
+  m_AnchoredPosition: {x: 0.00012207031, y: -13.6714}
+  m_SizeDelta: {x: 640.5006, y: 218.9445}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6073947065207638884
 CanvasRenderer:
@@ -837,7 +837,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34
+  m_fontSize: 31.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -892,7 +892,7 @@ GameObject:
   - component: {fileID: 5187828897151549061}
   - component: {fileID: 3724105432528174370}
   m_Layer: 0
-  m_Name: Slot_2
+  m_Name: Slot 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -910,7 +910,7 @@ RectTransform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 912850118795238845}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -980,7 +980,7 @@ GameObject:
   - component: {fileID: 2809110853904379306}
   - component: {fileID: 4964609542052866816}
   m_Layer: 0
-  m_Name: Slot_4
+  m_Name: Slot 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -998,7 +998,7 @@ RectTransform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 912850118795238845}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1144,7 +1144,7 @@ GameObject:
   - component: {fileID: 4693169211480990823}
   - component: {fileID: 7535269303326397424}
   m_Layer: 0
-  m_Name: Slot_8
+  m_Name: Slot 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1162,7 +1162,7 @@ RectTransform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 912850118795238845}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1286,7 +1286,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1342,7 +1342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -72, y: 13}
+  m_AnchoredPosition: {x: -93, y: 33}
   m_SizeDelta: {x: 319.65356, y: 50}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &1592387658948480360
@@ -1455,7 +1455,7 @@ GameObject:
   - component: {fileID: 5174801912799896769}
   - component: {fileID: 7712577770591481426}
   m_Layer: 0
-  m_Name: Slot_5
+  m_Name: Slot 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1473,7 +1473,7 @@ RectTransform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 912850118795238845}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1545,7 +1545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1708503827866290416
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1764,7 +1764,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2644628748079024405}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: EnterExploMode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5017125440514031405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,7 +1811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -545, y: 0}
   m_SizeDelta: {x: 1920.0001, y: 1080}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &6001842690088027486
@@ -1936,7 +1948,7 @@ GameObject:
   - component: {fileID: 1698660375724570837}
   - component: {fileID: 6427427062162996452}
   m_Layer: 0
-  m_Name: Slot_9
+  m_Name: Slot 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2078,7 +2090,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2326,7 +2338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &965010563296046603
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2336,7 +2348,7 @@ RectTransform:
   m_GameObject: {fileID: 7203228711900026534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 29.646}
-  m_LocalScale: {x: 0.78172, y: 0.78172, z: 0.78172}
+  m_LocalScale: {x: 0.42086244, y: 0.42086244, z: 0.42086244}
   m_Children:
   - {fileID: 9134609862091700599}
   - {fileID: 2779671058439499676}
@@ -2345,9 +2357,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 805.5752, y: 392.3498}
+  m_SizeDelta: {x: 821.6958, y: 408.9826}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1574656453884132642
 CanvasRenderer:
@@ -2377,9 +2389,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 21300000, guid: 175ad1d6547af1e4f88488e4c5d9be92, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2476,7 +2488,7 @@ GameObject:
   - component: {fileID: 8073876360480906281}
   - component: {fileID: 7247106376787843107}
   m_Layer: 0
-  m_Name: Slot_6
+  m_Name: Slot 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2494,7 +2506,7 @@ RectTransform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 912850118795238845}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2611,16 +2623,16 @@ MonoBehaviour:
   rightSlot: {fileID: 8144115607625357023}
   leftSlot: {fileID: 6757943224642642529}
   inventorySlots:
-  - {fileID: 9092537080917990263}
-  - {fileID: 5643987904843300451}
-  - {fileID: 7613700617949921799}
-  - {fileID: 4144318915371833822}
-  - {fileID: 7577728563170193139}
-  - {fileID: 8614169629417552158}
-  - {fileID: 6286550609049890632}
-  - {fileID: 4910184098408077519}
-  - {fileID: 5865087236340692935}
-  - {fileID: 3947893438988110011}
+  - {fileID: 1130313179366732517}
+  - {fileID: 7712577770591481426}
+  - {fileID: 2381609484697797303}
+  - {fileID: 7247106376787843107}
+  - {fileID: 3724105432528174370}
+  - {fileID: 8821314052028707845}
+  - {fileID: 3160753895882155930}
+  - {fileID: 7535269303326397424}
+  - {fileID: 4964609542052866816}
+  - {fileID: 6427427062162996452}
   baseSprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1 &8648797455202017628
 GameObject:
@@ -2706,14 +2718,14 @@ RectTransform:
   m_LocalScale: {x: 1.2241, y: 1.2241, z: 1.2241}
   m_Children:
   - {fileID: 9092537080917990263}
-  - {fileID: 5643987904843300451}
-  - {fileID: 7613700617949921799}
-  - {fileID: 4144318915371833822}
-  - {fileID: 7577728563170193139}
   - {fileID: 8614169629417552158}
+  - {fileID: 5643987904843300451}
   - {fileID: 6286550609049890632}
+  - {fileID: 7613700617949921799}
   - {fileID: 4910184098408077519}
+  - {fileID: 4144318915371833822}
   - {fileID: 5865087236340692935}
+  - {fileID: 7577728563170193139}
   - {fileID: 3947893438988110011}
   m_Father: {fileID: 6831295958419761664}
   m_RootOrder: 0
@@ -2828,7 +2840,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2916,7 +2928,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
